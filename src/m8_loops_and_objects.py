@@ -130,7 +130,7 @@ def draw_circles2():
     window1 = rg.RoseWindow(400, 400,)
     for k in range(20):
         cir=rg.Circle(rg.Point(a,100),10)
-
+        cir.fill_color='blue'
         a=a+20
         cir.attach_to(window1)
         window1.render()

@@ -5,18 +5,29 @@ This module lets you practice  ** using objects **, including:
   -- accessing their DATA via INSTANCE VARIABLES
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and MAddie Sorensen
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
 
 def main():
+    two_circles()
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
 
 
 def two_circles():
+    window1 = rg.RoseWindow(300, 300, )
+    cir = rg.Circle(rg.Point(200,40),6)
+    second=rg.Circle(rg.Point(125,125),100)
+    second.fill_color='red'
+    second.attach_to(window1)
+    cir.attach_to(window1)
+    window1.render()
+    window1.close_on_mouse_click()
+
+
     """
     -- Constructs an rg.RoseWindow.
     -- Constructs and draws two rg.Circle objects on the window
