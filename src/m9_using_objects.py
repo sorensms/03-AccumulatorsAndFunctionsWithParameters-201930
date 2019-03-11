@@ -12,7 +12,9 @@ import rosegraphics as rg
 
 
 def main():
-    two_circles()
+    #two_circles()
+    #circle_and_rectangle()
+    lines()
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
 
@@ -38,7 +40,7 @@ def two_circles():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its green doc-string above.
+    # Done: 2. Implement this function, per its green doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.pdf  lists all legal color-names.
     # Put a statement in   main   to test this function
@@ -47,6 +49,26 @@ def two_circles():
 
 
 def circle_and_rectangle():
+    window1 = rg.RoseWindow(300, 300, )
+    point1 = rg.Point(150, 150)
+    point2 = rg.Point(210, 50)
+    rec = rg.Rectangle(point1, point2)
+    second = rg.Circle(rg.Point(120, 200), 50)
+    second.fill_color = 'blue'
+    second.attach_to(window1)
+    rec.attach_to(window1)
+    window1.render()
+    window1.close_on_mouse_click()
+    print("1")
+    print("blue")
+    print("Point (120,200)")
+    print("120")
+    print("200")
+    print("1")
+    print("none")
+    print("Point (180,100)")
+    print("180")
+    print("100")
     """
     -- Constructs an rg.RoseWindow.
     -- Constructs and draws a rg.Circle and rg.Rectangle
@@ -78,7 +100,7 @@ def circle_and_rectangle():
            150.0
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its green doc-string above.
+    # Done: 3. Implement this function, per its green doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -87,8 +109,25 @@ def circle_and_rectangle():
     #       instance variables for outline thickness, etc.
     # -------------------------------------------------------------------------
 
-
+import math
 def lines():
+    window1 = rg.RoseWindow(300, 300, )
+    point1 = rg.Point(150, 150)
+    point2 = rg.Point(210, 50)
+    line1=rg.Line(point1,point2)
+    line1.attach_to(window1)
+    point11 = rg.Point(50, 170)
+    point22 = rg.Point(175, 65)
+    line11 = rg.Line(point11, point22)
+    line11.thickness=10
+    line11.attach_to(window1)
+    xc = math.sqrt(50**2+175**2)
+    ycenter = math.sqrt(170**2+65**2)
+    print("Point(xc, ycenter)")
+    print("xcenter")
+    print("ycenter")
+    window1.render()
+    window1.close_on_mouse_click()
     """
     -- Constructs a rg.RoseWindow.
     -- Constructs and draws on the window two rg.Lines such that:
