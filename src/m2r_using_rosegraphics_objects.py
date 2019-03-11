@@ -17,7 +17,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              In the middle of the screen
+#              the top left
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -25,7 +25,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
-#              up
+#              down
 #
 #     b. Write a line of code that constructs a RoseWindow object:
 #            point3=rg.Point(300,200)
@@ -42,17 +42,17 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #          -- Write the names of two types of graphics objects that
 #             you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                Rectangle and Square
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                Xpoint, Y point, Radius
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
 #                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            It draws the objects in the window
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?

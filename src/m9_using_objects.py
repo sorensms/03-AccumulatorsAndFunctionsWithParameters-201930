@@ -12,8 +12,8 @@ import rosegraphics as rg
 
 
 def main():
-    #two_circles()
-    #circle_and_rectangle()
+    two_circles()
+    circle_and_rectangle()
     lines()
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
